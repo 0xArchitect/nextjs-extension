@@ -17,7 +17,9 @@ const IndexPage = () => {
       {page == "calculator" && <Calculator/>}
       {page == "time" && <TimeConverter/>}
       {page == "coder" && <Coder/>}
-      {page == "impersonator" && <> //your component</>}
+      {page == "impersonator" && <>
+      {/* your component */}
+      </>}
     </div>
   );
 };
