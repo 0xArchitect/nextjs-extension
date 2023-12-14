@@ -22,10 +22,10 @@ export default function Calculator(){
     async function calculateWei() {
         if (wei !== "" && type === 1) {
             if(wei == "."){
-                setEther(ethers.formatEther("0."));
+                setEther(ethers.utils.formatEther("0."));
             }
             else{
-                setEther(ethers.formatEther(wei));
+                setEther(ethers.utils.formatEther(wei));
             }
         }
         else if(wei == ""){
@@ -36,10 +36,10 @@ export default function Calculator(){
       async function calculateEth(){
         if (ether !== "" && type === 2) {
             if(ether == "."){
-                setWei(ethers.parseUnits("0.", 18));
+                setWei(ethers.utils.parseUnits("0.", 18));
             }
             else{
-                setWei(String(ethers.parseUnits(String(ether), 18)));
+                setWei(String(ethers.utils.parseUnits(String(ether), 18)));
             }
         }
         else if(ether == ""){
