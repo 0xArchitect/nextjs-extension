@@ -71,8 +71,8 @@ export default function Calculator(){
 
 
     return(
-        <div className="text-center py-10 bg-gradient-to-br from-blue-400 to-purple-700">
-            <h1 className="text-[3rem] text-white mb-5 font-bold">Calculator</h1>
+        <div className="text-center py-10 ">
+            <h1 className="text-[2rem] text-white mb-5 font-bold">Calculator</h1>
             <div className="grid grid-flow-col grid-cols-2 w-[90%] mx-auto mb-10">
                 <button className="bg-gradient-to-br from-purple-400 to-purple-600 text-[1.3rem] px-2 text-white font-bold rounded-xl py-4 w-[70%] mx-auto hover:bg-gradient-to-br hover:from-purple-600 hover:to-purple-800 duration-500" onClick={()=>{setType(1); setEther(""); setWei("")}}>
                     Wei to Eth
